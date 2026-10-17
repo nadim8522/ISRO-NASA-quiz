@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ISRO-NASA Screening Test</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+
+/* Urdu Quiz Font */
+
+@font-face {
+
+    font-family: Jameel;
+
+    src: url("assets/JameelNooriNastaleeq.ttf");
+
+}
+
+
+body {
+
+    font-family: Jameel, Arial, sans-serif;
+
+}
+
+
+.quiz-box {
+
+    background:white;
+
+    width:90%;
+
+    max-width:800px;
+
+    margin:30px auto;
+
+    padding:25px;
+
+    border-radius:15px;
+
+}
+
+
+#questionNumber {
+
+    text-align:center;
+
+    font-size:24px;
+
+    color:#0b3d91;
+
+}
+
+
+#questionText {
+
+    font-size:28px;
+
+    margin:25px 0;
+
+}
+
+
+.option {
+
+    display:block;
+
+    padding:12px;
+
+    margin:12px 0;
+
+    background:#f0f4ff;
+
+    border-radius:10px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+
+.option:hover {
+
+    background:#dce7ff;
+
+}
+
+
+.buttons {
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+.buttons button {
+
+    flex:1;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="quiz-box">
+
+
+<h1 style="text-align:center;">
+🚀 ISRO-NASA Screening Test
+</h1>
+
+
+<div id="questionNumber"></div>
+
+
+<div id="questionText"></div>
+
+
+<div id="options"></div>
+
+
+
+<div class="buttons">
+
+
+<button onclick="previousQuestion()">
+Previous
+</button>
+
+
+<button onclick="nextQuestion()">
+Next
+</button>
+
+
+</div>
+
+
+
+<button onclick="submitQuiz()">
+Submit Test
+</button>
+
+
+</div>
+
+
+
+<script src="questions.js"></script>
+
+<script src="script.js"></script>
+
+
+
+<script>
+
+loadQuestion();
+
+</script>
+
+
+</body>
+
+</html>
